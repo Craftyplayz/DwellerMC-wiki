@@ -11,7 +11,8 @@ The world is one huge cave system. There is no surface, no sky to walk under and
 | -300 and above | Stone |
 | -301 to -308 | Mixed band of stone and deepslate |
 | below -308 | Deepslate |
-| -2028 to -2031 | Patchy bedrock: 80% at -2031, 60% at -2030, 40% at -2029, 20% at -2028 |
+| -2026 and below | [Lava sea](#lava-sea): every cave that reaches the bottom is flooded with lava up to Y -2026 |
+| -2028 to -2031 | Patchy bedrock under the lava: 80% at -2031, 60% at -2030, 40% at -2029, 20% at -2028 |
 | -2032 | Solid bedrock floor, the bottom of the world |
 
 In the mixed band, the chance a block is deepslate rises by 12.5% per block down: 12.5% at Y -301, 100% at Y -308. Ores follow the rock: stone ores in stone, deepslate ores in deepslate (see [Ores](ores.md)).
@@ -33,7 +34,10 @@ Caves are made of three overlapping shapes:
 - **Huge voids:** rare, very large open spaces.
 - **Tunnels:** long winding passages that link areas together.
 
-Caves run from just under the roof all the way down to the bedrock floor. Inside rare [cave biome](biomes/index.md) patches the rock is restyled (sandstone, moss, dripstone, sulfur, sculk), but the cave shapes stay the same.
+Caves run from just under the roof all the way down to the [lava sea](#lava-sea). Inside rare [cave biome](biomes/index.md) patches the rock is restyled (sandstone, moss, dripstone, sulfur, sculk), but the cave shapes stay the same.
+
+## Lava sea
+The bottom of the world is a sea of lava. Any cave space from Y -2026 down is lava (solid rock stays rock), so the bedrock floor is never exposed: the deepest caves end in a flat lava surface at Y -2026, with patchy bedrock 2 to 5 blocks under it and the solid floor below that. These are the default heights; a server can change them. Bring Fire Resistance if you plan to mine around it, and don't drop anything you want to keep.
 
 ## Extra features
 Minecraft's usual underground features also generate, using Minecraft's own placement rules. In every [cave biome](biomes/index.md):

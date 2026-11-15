@@ -8,7 +8,7 @@ DwellerMC is an underground survival world. The main world is a 2,000-block-deep
 ## The world
 | Page | What it covers |
 |---|---|
-| [World layout](world/layout.md) | Height limits, the bedrock roof, stone and deepslate, cave shapes |
+| [World layout](world/layout.md) | Height limits, the bedrock roof, the lava sea, stone and deepslate, cave shapes |
 | [Depth & area level](world/depth.md) | The action bar, how depth sets difficulty, the depth calculator |
 | [Spawning & respawning](world/spawning.md) | Where new players start and where you respawn |
 | [The Surface](world/surface.md) | The portal, the Sunward suit, burning, surface mobs, the daily Sun Shard |
@@ -36,7 +36,7 @@ DwellerMC is an underground survival world. The main world is a 2,000-block-deep
 | [Discord](plugins/discord.md), [Tab list](plugins/tab-list.md), [Stats](plugins/stats.md) | Community |
 
 ## Quick facts
-- World height: Y **-2032** (bedrock floor) up to the bedrock roof at about Y **0**.
+- World height: Y **-2032** (bedrock floor under a lava sea) up to the bedrock roof at about Y **0**.
 - Deepest point: depth **2,031**, area level **50**.
 - Ores and mob strength depend on depth only, not on distance from spawn.
 - The caves have no surface. The separate [Surface](world/surface.md) world needs a full Sunward suit and its mobs are level 50.
