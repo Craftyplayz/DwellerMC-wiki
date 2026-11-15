@@ -48,7 +48,7 @@
     elites: { chance: [0.01, 0.03], xpMultiplier: 5 },
     // DwellerCore tools/dungeons.py POINTS: (Y, x vanilla), linear between, none above the first
     dungeons: [[-250, 0.6], [-1000, 1.0], [-1500, 2.0], [-2026, 2.0]],
-    // DwellerBiomes config (placement); edge fade from BiomePicker.EDGE_FADE
+    // DwellerBiomes config (placement); edge fade from patches.edge-fade
     biomeEdgeFade: 32,
     biomes: [
       { id: "sandstone_caves", name: "Sandstone Caves", page: "sandstone-caves", minY: -700, maxY: -20, size: 300, rarity: 0.6 },

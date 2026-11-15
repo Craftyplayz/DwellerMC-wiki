@@ -121,7 +121,6 @@ const BIOMES = "DwellerBiomes/src/main/resources/config.yml";
 const DEPTH = "DwellerCore/src/main/java/net/dwellermc/core/Depth.java";
 const GEN = "DwellerCore/src/main/java/net/dwellermc/core/world/DwellerGenerator.java";
 const DUNGEONS = "DwellerCore/tools/dungeons.py";
-const PICKER = "DwellerBiomes/src/main/java/net/dwellermc/biomes/BiomePicker.java";
 const cfg = (dwPath, file, key) => check(dwPath, yget(file, key.split(".")), `${file}:${key}`);
 
 check("worldMinY", jnum(DEPTH, "WORLD_MIN_Y"), `${DEPTH}:WORLD_MIN_Y`);
@@ -164,7 +163,7 @@ cfg("elites.xpMultiplier", CORE, "elites.xp-multiplier");
 const points = constant(DUNGEONS, "POINTS");
 check("dungeons", points && JSON.parse(points.replace(/\(/g, "[").replace(/\)/g, "]")), `${DUNGEONS}:POINTS`);
 
-check("biomeEdgeFade", jnum(PICKER, "EDGE_FADE"), `${PICKER}:EDGE_FADE`);
+cfg("biomeEdgeFade", BIOMES, "patches.edge-fade");
 const placed = ychildren(BIOMES, ["biomes"]).filter((b) => ychildren(BIOMES, ["biomes", b]).includes("placement"));
 check("biomes[*].id", placed, `${BIOMES}:biomes.*.placement`, DW.biomes.map((b) => b.id));
 DW.biomes.forEach((b, i) => {
