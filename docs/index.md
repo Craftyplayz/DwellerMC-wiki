@@ -30,6 +30,3 @@ DwellerMC is an underground survival world. There is no surface: the whole world
 - Deepest point: depth **2,031**, area level **50**.
 - Ores and mob strength depend on depth only, not on distance from spawn.
 - About **86%** of the caves are plain [Caves](world/biomes/caves.md). The other five biomes are rare, large patches.
-
-!!! info "How this wiki stays accurate"
-    Every number here is taken from the server's plugin code and default config, not from plans or announcements. The pages are updated whenever the code changes.

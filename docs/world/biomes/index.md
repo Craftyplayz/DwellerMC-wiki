@@ -13,12 +13,12 @@ Most of the world is plain [Caves](caves.md). The other five biomes are rare, la
 | [Deep Dark](deep-dark.md) | `minecraft:deep_dark` | -1400 to -2000 | about 340 blocks | about 2.4% |
 | Bedrock Roof | `dwellerbiomes:bedrock_roof` | the [roof](../layout.md#bedrock-roof) and above | – | – |
 
-The "share" column was measured by sampling 2 million random points from the generator across a 20,000 × 20,000 block area. Inside its own depth range a biome is more common than its world share suggests.
+Shares are approximate. Inside its own depth range a biome is more common than its world share suggests.
 
 Use the [depth calculator](../depth.md#depth-calculator) to see which biomes can appear at a Y level.
 
 ## How patches are placed
-- Each biome has its own noise map. Where the map is above a threshold, that spot belongs to the biome. If two biomes overlap, the stronger one wins.
+- Each biome is placed in large random blobs. Where two biomes' blobs overlap, only one of them is used.
 - Patches are flatter than they are wide: about 60% as tall as they are across, so they follow cave layers.
 - Patches shrink over the last 32 blocks at the top and bottom of their depth range, so the edges aren't flat cuts.
 - Biomes are set per 4 × 4 × 4 block cell, the same way Minecraft does it.

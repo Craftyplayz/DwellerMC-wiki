@@ -109,7 +109,7 @@
   const link = (path, text) => `<a href="${base()}${path}">${text}</a>`;
 
   function oreTable(y) {
-    if (!F.oresAt(y)) return `<p>No ores at Y ${y}. DwellerCore places ores from Y ${DW.worldMinY + 1} to Y ${DW.caveCeilingY - 1}.</p>`;
+    if (!F.oresAt(y)) return `<p>No ores at Y ${y}. Ores generate from Y ${DW.worldMinY + 1} to Y ${DW.caveCeilingY - 1}.</p>`;
     const s = F.slab(y);
     const deep = F.deepslateChance(y);
     const variant = deep === 0 ? "Stone ores" : deep === 1 ? "Deepslate ores" : `Mixed: ${pct(deep, 0)} deepslate ores`;
