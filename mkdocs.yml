@@ -43,5 +43,31 @@ markdown_extensions:
 plugins:
   - search
 
+extra_javascript:
+  - javascripts/dweller.js
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Home: index.md
+  - World:
+      - Layout: world/layout.md
+      - Depth & area level: world/depth.md
+      - Spawning & respawning: world/spawning.md
+      - Ores: world/ores.md
+      - Structures: world/structures.md
+      - Cave biomes:
+          - world/biomes/index.md
+          - Caves: world/biomes/caves.md
+          - Sandstone Caves: world/biomes/sandstone-caves.md
+          - Lush Caves: world/biomes/lush-caves.md
+          - Dripstone Caves: world/biomes/dripstone-caves.md
+          - Sulfur Caves: world/biomes/sulfur-caves.md
+          - Deep Dark: world/biomes/deep-dark.md
+  - Mobs:
+      - Mob levels: mobs/levels.md
+      - Mob gear: mobs/gear.md
+      - Mob abilities: mobs/abilities.md
+      - Tougher spawns: mobs/spawn-mix.md
+      - Elite mobs: mobs/elites.md
+      - Kill rewards: mobs/rewards.md
