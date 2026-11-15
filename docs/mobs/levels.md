@@ -3,7 +3,8 @@
 Every hostile mob has a level from **1 to 50**, based on the depth where it spawned. Higher levels have more health, damage, speed and armor, better [gear](gear.md) and stronger [abilities](abilities.md), and give better [rewards](rewards.md).
 
 ## Which mobs get a level
-- **All hostile mobs**, however they spawn: naturally, from spawners, from spawn eggs or summoned by an [elite](elites.md).
+- **All hostile mobs**: natural spawns, spawn eggs, trial spawners and mobs summoned by an [elite](elites.md).
+- **Not leveled: mobs from mob spawners**, such as the ones in [dungeons](../world/structures.md#dungeons). They're normal Minecraft mobs.
 - **Not leveled:** Warden, Wither, Ender Dragon and Elder Guardian (they're already bosses), and all passive mobs.
 - **NPCs** (shopkeepers and other characters placed by staff) are never leveled. See [NPCs](../plugins/npcs.md).
 

@@ -22,6 +22,7 @@ Enter any Y level:
 | Spawn swapped for a tougher mob | 0% | 50% | [Tougher spawns](../mobs/spawn-mix.md) |
 | Rare deep mobs | never | below Y -1400 | [Tougher spawns](../mobs/spawn-mix.md#deep-mobs) |
 | Elite chance | 1% | 3% | [Elite mobs](../mobs/elites.md) |
+| Dungeons | none above Y -250 | ×2 below Y -1500 | [Structures](structures.md#dungeons) |
 | Cave biomes | each has its own depth range | | [Cave biomes](biomes/index.md) |
 
 Distance from spawn doesn't matter. Only your Y level does.

@@ -6,7 +6,7 @@ Elites are rare, much more dangerous versions of leveled mobs. They have a gold 
 Any [leveled mob](levels.md) can become elite when it spawns:
 
 - **1%** near the roof, rising to **3%** at the bottom. Use the [depth calculator](../world/depth.md#depth-calculator) for any Y.
-- This includes mobs from spawners, spawn eggs, [spawn swaps](spawn-mix.md) and minions summoned by other elites.
+- This includes spawn eggs, [spawn swaps](spawn-mix.md) and minions summoned by other elites. Mobs from mob spawners are never leveled, so they can't be elite.
 
 ## How to spot one
 - **Gold name tag** with its traits: `Lv 38 Vampiric Blinking Zombie`.

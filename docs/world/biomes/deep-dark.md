@@ -28,8 +28,8 @@ Minecraft's own deep dark features also generate: sculk patches and sculk veins,
 ## Mobs
 **No mobs spawn naturally here**, the same as in normal Minecraft. Because nothing spawns, nothing gets [swapped for tougher mobs](../../mobs/spawn-mix.md) either. The danger comes from shriekers and from mobs that wander in from the caves around it.
 
-## Not an ancient city biome
-In normal Minecraft, ancient cities only spawn in the Deep Dark. In DwellerMC they can spawn in any cave biome between Y -1600 and -400. See [Structures](../structures.md).
+## Ancient cities
+Ancient cities only spawn in the Deep Dark, starting between Y -1450 and -1950. Deep Dark patches are rare, so ancient cities are too. See [Structures](../structures.md).
 
 ## Related
 - [Cave biomes overview](index.md)

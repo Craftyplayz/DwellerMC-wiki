@@ -38,7 +38,8 @@ Caves run from just under the roof all the way down to the bedrock floor. Inside
 ## Extra features
 Minecraft's usual underground features also generate, using Minecraft's own placement rules. In every [cave biome](biomes/index.md):
 
-- Amethyst geodes and dungeons (monster rooms with a spawner)
+- Amethyst geodes
+- Dungeons (monster rooms with a spawner), only below Y -250 and more common deeper down: see [Structures](structures.md#dungeons)
 - Patches of dirt, gravel, granite, andesite and tuff
 - Sand, clay and gravel disks, and glow lichen
 

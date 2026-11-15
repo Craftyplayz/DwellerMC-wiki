@@ -46,6 +46,8 @@
       rareDropMaxChance: 0.03,
     },
     elites: { chance: [0.01, 0.03], xpMultiplier: 5 },
+    // DwellerCore tools/dungeons.py POINTS: (Y, x vanilla), linear between, none above the first
+    dungeons: [[-250, 0.6], [-1000, 1.0], [-1500, 2.0], [-2026, 2.0]],
     // DwellerBiomes config (placement); edge fade from BiomePicker.EDGE_FADE
     biomeEdgeFade: 32,
     biomes: [
@@ -91,6 +93,12 @@
     replaceChance: (y) => DW.mobs.replaceChance[0] + (DW.mobs.replaceChance[1] - DW.mobs.replaceChance[0]) * F.fraction(y),
     eliteChance: (y) => DW.elites.chance[0] + (DW.elites.chance[1] - DW.elites.chance[0]) * F.fraction(y),
     biomesAt: (y) => DW.biomes.filter((b) => y >= b.minY && y <= b.maxY),
+    dungeonDensity: (y) => {
+      const p = DW.dungeons;
+      for (let i = 1; i < p.length; i++)
+        if (y <= p[i - 1][0] && y >= p[i][0]) return p[i - 1][1] + (p[i][1] - p[i - 1][1]) * (p[i - 1][0] - y) / (p[i - 1][0] - p[i][0]);
+      return 0;
+    },
     eliteTraitCount: (level) => (level <= 15 ? 1 : level <= 35 ? 2 : 3),
     gearTier: (level) => (level >= 45 ? 4 : level >= 35 ? 3 : level >= 18 ? 2 : level >= 11 ? 1 : 0),
     nameColor: (level) => (level <= 10 ? "Green" : level <= 20 ? "Yellow" : level <= 35 ? "Red" : level <= 45 ? "Light purple" : "Dark red"),
@@ -137,6 +145,7 @@
       ["…of those, rare deep mob", y < DW.mobs.deepMobStartY ? pct(DW.mobs.deepMobChance, 0) : "0% (only below Y " + DW.mobs.deepMobStartY + ")", "mobs/spawn-mix.md"],
       ["Chance a leveled mob is elite", pct(F.eliteChance(y), 2), "mobs/elites.md"],
       ["Elite traits", lo === hi ? F.eliteTraitCount(lo) : `${F.eliteTraitCount(lo)} – ${F.eliteTraitCount(hi)}`, "mobs/elites.md"],
+      ["Dungeons (compared to normal Minecraft)", F.dungeonDensity(y) ? "×" + num(F.dungeonDensity(y), 2) : "None", "world/structures.md"],
       ["Cave biomes that can appear", biomes.length ? biomes.map((b) => link(`world/biomes/${b.page}/`, b.name)).join(", ") : "Only plain Caves", "world/biomes/index.md"],
     ];
     return `<table><tbody>${rows.map((r) => `<tr><td>${r[2] ? link(r[2].replace(/(index)?\.md$/, "/").replace(/\/\/$/, "/"), r[0]) : r[0]}</td><td>${r[1]}</td></tr>`).join("")}</tbody></table>`;
