@@ -6,12 +6,12 @@
     worldMinY: -2032,
     caveTopY: 0,            // config world.cave-top-y
     caveCeilingY: -17,      // DwellerGenerator CAVE_TOP (ROOF_BOTTOM - 1): caves and ores only below this
-    deepslateY: -300,       // stone at/above, 8-block mixed band below, deepslate under -308
+    deepslateY: -300,       // config rock.deepslate-y: stone at/above, 8-block mixed band below (rock.deepslate-blend), deepslate under -308
     maxLevel: 50,           // config mobs.max-level
     levelSpread: 2,         // config mobs.level-spread
     // DwellerCore config ores
     ores: {
-      slab: 64,
+      slab: 64,             // config ores.layer-height
       buriedChance: 0.1,
       depthMultiplier: [[-400, 1], [-1000, 2], [-2032, 3]],
       types: [

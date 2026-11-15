@@ -103,7 +103,6 @@ const jnum = (file, name) => {
   const v = constant(file, name);
   return v !== undefined && !isNaN(v) ? Number(v) : v;
 };
-const jarray = (file, name) => (constant(file, name)?.match(/\{(.*)\}/)?.[1] ?? "").split(",").map((s) => s.trim().replace(/^EntityType\./, ""));
 
 // ---------- checks ----------
 let checked = 0;
@@ -121,8 +120,6 @@ const CORE = "DwellerCore/src/main/resources/config.yml";
 const BIOMES = "DwellerBiomes/src/main/resources/config.yml";
 const DEPTH = "DwellerCore/src/main/java/net/dwellermc/core/Depth.java";
 const GEN = "DwellerCore/src/main/java/net/dwellermc/core/world/DwellerGenerator.java";
-const ORES = "DwellerCore/src/main/java/net/dwellermc/core/world/OrePlacer.java";
-const MIX = "DwellerCore/src/main/java/net/dwellermc/core/mob/SpawnMix.java";
 const DUNGEONS = "DwellerCore/tools/dungeons.py";
 const PICKER = "DwellerBiomes/src/main/java/net/dwellermc/biomes/BiomePicker.java";
 const cfg = (dwPath, file, key) => check(dwPath, yget(file, key.split(".")), `${file}:${key}`);
@@ -132,11 +129,11 @@ cfg("caveTopY", CORE, "world.cave-top-y");
 // caveCeilingY = CAVE_TOP = ROOF_BOTTOM - 1; flag the derivation itself if the Java expression changes.
 const caveTop = constant(GEN, "CAVE_TOP");
 check("caveCeilingY", caveTop === "ROOF_BOTTOM - 1" ? jnum(GEN, "ROOF_BOTTOM") - 1 : `CAVE_TOP = ${caveTop}`, `${GEN}:CAVE_TOP`);
-check("deepslateY", jnum(GEN, "DEEPSLATE_Y"), `${GEN}:DEEPSLATE_Y`);
+cfg("deepslateY", CORE, "rock.deepslate-y");
 cfg("maxLevel", CORE, "mobs.max-level");
 cfg("levelSpread", CORE, "mobs.level-spread");
 
-check("ores.slab", jnum(ORES, "SLAB"), `${ORES}:SLAB`);
+cfg("ores.slab", CORE, "ores.layer-height");
 cfg("ores.buriedChance", CORE, "ores.buried-chance");
 cfg("ores.depthMultiplier", CORE, "ores.depth-multiplier");
 check("ores.types[*].id", ychildren(CORE, ["ores", "types"]), `${CORE}:ores.types`, DW.ores.types.map((o) => o.id));
@@ -157,9 +154,9 @@ const mobs = {
 for (const [k, key] of Object.entries(mobs)) cfg(`mobs.${k}`, CORE, `mobs.${key}`);
 // Wiki writes "Cave Spider", code EntityType.CAVE_SPIDER.
 const title = (s) => s.toLowerCase().split("_").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
-const weighted = (types, weights) => jarray(MIX, types).map((t, i) => [title(t), Number(jarray(MIX, weights)[i])]);
-check("mobs.mix", weighted("MIX", "MIX_W"), `${MIX}:MIX, MIX_W`);
-check("mobs.deep", weighted("DEEP", "DEEP_W"), `${MIX}:DEEP, DEEP_W`);
+const weighted = (key) => Object.entries(yget(CORE, key.split(".")) ?? {}).map(([t, w]) => [title(t), Number(w)]);
+check("mobs.mix", weighted("mobs.spawn-mix.tough-mobs"), `${CORE}:mobs.spawn-mix.tough-mobs`);
+check("mobs.deep", weighted("mobs.spawn-mix.deep-mobs"), `${CORE}:mobs.spawn-mix.deep-mobs`);
 
 cfg("elites.chance", CORE, "elites.chance");
 cfg("elites.xpMultiplier", CORE, "elites.xp-multiplier");
