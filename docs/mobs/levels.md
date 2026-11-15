@@ -5,6 +5,7 @@ Every hostile mob has a level from **1 to 50**, based on the depth where it spaw
 ## Which mobs get a level
 - **All hostile mobs**, however they spawn: naturally, from spawners, from spawn eggs or summoned by an [elite](elites.md).
 - **Not leveled:** Warden, Wither, Ender Dragon and Elder Guardian (they're already bosses), and all passive mobs.
+- **NPCs** (shopkeepers and other characters placed by staff) are never leveled. See [NPCs](../plugins/npcs.md).
 
 ## Spawn level
 A mob's level = the [area level](../world/depth.md) where it spawns, plus a random **-2 to +2**, kept between 1 and 50.

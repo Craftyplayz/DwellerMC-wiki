@@ -1,31 +1,28 @@
 # Spawning & respawning
 
 ## First join
-New players are placed in a random cave near the world spawn:
-
-- Up to **256 blocks** from the world spawn along each axis (a square area, not a circle).
-- Between **Y -300 and Y -600**, which is area level 8–15 (see [Depth](depth.md)).
-- On a safe spot: a solid floor that isn't magma, with two blocks of air above it.
-
-The server tries up to 8 random spots, scanning each from Y -300 downward. If none has a safe floor, it carves a small 3×3 room with a deepslate floor at **Y -450** and puts you there.
+New players start at the server spawn, a fixed point inside the caves. You also get a free set of stone tools.
 
 ## Dying
 | You have… | You respawn… |
 |---|---|
-| A bed where you set your spawn | At your bed, as normal |
-| No bed, or your bed is gone or blocked | In a random cave, the same way as on first join |
+| A bed where you set your spawn | At your bed |
+| No bed, or your bed is gone or blocked | At the server spawn |
 
 Beds:
 
-- **Setting your spawn** works at any time.
+- **Setting your spawn** works at any time: right-click a bed.
 - **Sleeping** only works when it's dark (night).
 
 Respawn anchors don't work in this world.
 
+`/spawn` takes you back to the server spawn at any time. See [Commands and spawn](../plugins/essentials.md) for `/home`, `/tpa` and other ways to get around.
+
 !!! warning
-    Without a bed you can respawn up to 256 blocks from the world spawn, possibly far from your base. Set a bed early.
+    Your items stay where you died, often deep in a cave. Set a bed or a home near your base so you can get back quickly.
 
 ## Related
-- [Depth & area level](depth.md): how dangerous Y -300 to -600 is
-- [Mob levels](../mobs/levels.md): what level the mobs around spawn are
+- [Commands and spawn](../plugins/essentials.md)
+- [Depth & area level](depth.md): how dangerous the caves are at each level
+- [Mob levels](../mobs/levels.md)
 - [World layout](layout.md)

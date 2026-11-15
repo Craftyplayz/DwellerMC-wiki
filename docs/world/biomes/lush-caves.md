@@ -45,6 +45,7 @@ Hostile mobs get a [level](../../mobs/levels.md) and can be [swapped for tougher
 Minecraft's lush caves music.
 
 ## Related
+- [Brewing](../../plugins/breweryx.md): azalea trees here are one of the few underground sources of wood
 - [Cave biomes overview](index.md)
 - [Sandstone Caves](sandstone-caves.md) and [Dripstone Caves](dripstone-caves.md) share part of this depth range
 - [Depth & area level](../depth.md): mobs here are level 1–15

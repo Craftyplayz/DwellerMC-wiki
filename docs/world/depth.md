@@ -49,6 +49,6 @@ Mobs spawn at the area level ±2, never below 1 or above 50. See [Mob levels](..
 
 ## Related
 - [World layout](layout.md)
-- [Spawning & respawning](spawning.md): new players start between Y -300 and -600 (area level 8–15)
+- [Spawning & respawning](spawning.md): where you start and respawn
 - [Mob levels](../mobs/levels.md), [Elite mobs](../mobs/elites.md), [Tougher spawns](../mobs/spawn-mix.md)
 - [Ores](ores.md)

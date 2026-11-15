@@ -10,7 +10,7 @@ DwellerMC is an underground survival world. There is no surface: the whole world
 |---|---|
 | [World layout](world/layout.md) | Height limits, the bedrock roof, stone and deepslate, cave shapes |
 | [Depth & area level](world/depth.md) | The action bar, how depth sets difficulty, the depth calculator |
-| [Spawning & respawning](world/spawning.md) | Where new players and deaths without a bed end up |
+| [Spawning & respawning](world/spawning.md) | Where new players start and where you respawn |
 | [Ores](world/ores.md) | Ore amounts by depth, the cave-wall rule, the ore calculator |
 | [Cave biomes](world/biomes/index.md) | The six cave biomes, how rare they are, what's in each |
 | [Structures](world/structures.md) | Ancient cities, trial chambers, mineshafts, strongholds |
@@ -24,6 +24,15 @@ DwellerMC is an underground survival world. There is no surface: the whole world
 | [Tougher spawns](mobs/spawn-mix.md) | Spawns swapped for tougher mobs, deep mobs, wardens |
 | [Elite mobs](mobs/elites.md) | Elite chance, the 12 traits, boss bars |
 | [Kill rewards](mobs/rewards.md) | Bonus XP, extra loot, rare drops |
+
+## Server features
+| Page | What it covers |
+|---|---|
+| [Commands and spawn](plugins/essentials.md) | `/spawn`, homes, teleport requests, messages |
+| [Elevators](plugins/v-elevator.md) | Fast travel up and down shafts |
+| [Veinmine](plugins/veinminer.md), [Crafty Tools](plugins/craftytools.md), [PickupBot](plugins/pickupbot.md) | Mining helpers |
+| [Brewing](plugins/breweryx.md), [Vaults](plugins/vaults.md), [Vertical slabs](plugins/vertical-slabs.md) | Drinks, extra storage, building |
+| [Discord](plugins/discord.md), [Tab list](plugins/tab-list.md), [Stats](plugins/stats.md) | Community |
 
 ## Quick facts
 - World height: Y **-2032** (bedrock floor) up to the bedrock roof at about Y **0**.

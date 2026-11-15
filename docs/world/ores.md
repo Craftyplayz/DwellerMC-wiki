@@ -96,3 +96,4 @@ Each vein starts at a random spot in the layer and wanders one block at a time i
 - [World layout](layout.md): stone vs deepslate
 - [Cave biomes](biomes/index.md)
 - [Kill rewards](../mobs/rewards.md)
+- [Veinmine](../plugins/veinminer.md), [Crafty Tools](../plugins/craftytools.md) and [PickupBot](../plugins/pickupbot.md): mining faster

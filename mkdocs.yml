@@ -71,3 +71,24 @@ nav:
       - Tougher spawns: mobs/spawn-mix.md
       - Elite mobs: mobs/elites.md
       - Kill rewards: mobs/rewards.md
+  - Server features:
+      - Getting around:
+          - Commands and spawn: plugins/essentials.md
+          - Elevators: plugins/v-elevator.md
+          - Protected areas: plugins/worldguard.md
+      - Mining:
+          - Veinmine: plugins/veinminer.md
+          - Crafty Tools: plugins/craftytools.md
+          - PickupBot: plugins/pickupbot.md
+      - Fun & building:
+          - Brewing: plugins/breweryx.md
+          - Vaults: plugins/vaults.md
+          - Vertical slabs: plugins/vertical-slabs.md
+          - Name colors: plugins/namecolor.md
+          - Disguises: plugins/disguises.md
+          - NPCs: plugins/npcs.md
+      - Community:
+          - Discord: plugins/discord.md
+          - Tab list: plugins/tab-list.md
+          - Stats: plugins/stats.md
+          - Chat reporting: plugins/chat-reporting.md

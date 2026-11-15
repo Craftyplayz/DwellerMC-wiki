@@ -50,3 +50,4 @@ Lava lakes and water and lava springs appear in every biome except the [Deep Dar
 - [Cave biomes](biomes/index.md)
 - [Structures](structures.md)
 - [Spawning & respawning](spawning.md)
+- [Elevators](../plugins/v-elevator.md): getting up and down a 2,000-block-deep world
