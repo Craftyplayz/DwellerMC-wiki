@@ -1,6 +1,6 @@
 # DwellerMC Wiki
 
-DwellerMC is an underground survival world. There is no surface: the whole world is a 2,000-block-deep cave system under a bedrock roof. The deeper you go, the richer the ores and the stronger the mobs.
+DwellerMC is an underground survival world. The main world is a 2,000-block-deep cave system under a bedrock roof, with no surface. A separate, deadly [Surface](world/surface.md) can be reached through one portal, with a suit. The deeper you go, the richer the ores and the stronger the mobs.
 
 !!! tip "Find out what's at your Y level"
     The [Depth page](world/depth.md#depth-calculator) has a calculator: enter a Y level and it shows the mob levels, ore multiplier, elite chance and cave biomes there.
@@ -11,6 +11,7 @@ DwellerMC is an underground survival world. There is no surface: the whole world
 | [World layout](world/layout.md) | Height limits, the bedrock roof, stone and deepslate, cave shapes |
 | [Depth & area level](world/depth.md) | The action bar, how depth sets difficulty, the depth calculator |
 | [Spawning & respawning](world/spawning.md) | Where new players start and where you respawn |
+| [The Surface](world/surface.md) | The portal, the Sunward suit, burning, surface mobs, the daily Sun Shard |
 | [Ores](world/ores.md) | Ore amounts by depth, the cave-wall rule, the ore calculator |
 | [Cave biomes](world/biomes/index.md) | The six cave biomes, how rare they are, what's in each |
 | [Structures](world/structures.md) | Ancient cities, trial chambers, mineshafts, strongholds |
@@ -38,4 +39,5 @@ DwellerMC is an underground survival world. There is no surface: the whole world
 - World height: Y **-2032** (bedrock floor) up to the bedrock roof at about Y **0**.
 - Deepest point: depth **2,031**, area level **50**.
 - Ores and mob strength depend on depth only, not on distance from spawn.
+- The caves have no surface. The separate [Surface](world/surface.md) world needs a full Sunward suit and its mobs are level 50.
 - About **86%** of the caves are plain [Caves](world/biomes/caves.md). The other five biomes are rare, large patches.

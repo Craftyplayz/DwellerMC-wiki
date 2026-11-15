@@ -11,6 +11,8 @@ Every hostile mob has a level from **1 to 50**, based on the depth where it spaw
 ## Spawn level
 A mob's level = the [area level](../world/depth.md) where it spawns, plus a random **-2 to +2**, kept between 1 and 50.
 
+The [Surface](../world/surface.md) is not depth-based: its mobs always use area level 50, so they are level 48 to 50.
+
 The level is fixed at spawn. A mob that follows you up or down keeps its level.
 
 ## Level calculator

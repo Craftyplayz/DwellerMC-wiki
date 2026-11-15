@@ -54,6 +54,7 @@ nav:
       - Layout: world/layout.md
       - Depth & area level: world/depth.md
       - Spawning & respawning: world/spawning.md
+      - The Surface: world/surface.md
       - Ores: world/ores.md
       - Structures: world/structures.md
       - Cave biomes:

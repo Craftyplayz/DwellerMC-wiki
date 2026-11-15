@@ -14,7 +14,7 @@ Beds:
 - **Setting your spawn** works at any time: right-click a bed.
 - **Sleeping** only works when it's dark (night).
 
-Respawn anchors don't work in this world.
+Respawn anchors don't work in this world. Beds can't set your spawn on the [Surface](surface.md), and if you log out there you log back in underground.
 
 `/spawn` takes you back to the server spawn at any time. See [Commands and spawn](../plugins/essentials.md) for `/home`, `/tpa` and other ways to get around.
 
@@ -26,3 +26,4 @@ Respawn anchors don't work in this world.
 - [Depth & area level](depth.md): how dangerous the caves are at each level
 - [Mob levels](../mobs/levels.md)
 - [World layout](layout.md)
+- [The Surface](surface.md)

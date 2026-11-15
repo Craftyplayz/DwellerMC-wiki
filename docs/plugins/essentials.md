@@ -39,6 +39,8 @@ Most players can have 3 homes. Set one at every base and mine you want to return
 | `/tptoggle` | Block all teleport requests |
 | `/back` | Go back to where you were before your last teleport |
 
+`/home`, `/back` and `/tpa` can't take you to the [Surface](../world/surface.md). Use its portal.
+
 Requests expire after 2 minutes. Don't move while a teleport is counting down, if the server uses a delay.
 
 ## Chat and mail

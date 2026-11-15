@@ -28,7 +28,7 @@ Each normal drop (rotten flesh, bones, string and so on) gets extra copies:
 | 40 | 1.47 | 4, or 6 (47% chance) |
 | 50 | 1.97 | 4, or 6 (97% chance) |
 
-Elites don't get extra loot rolls. They get a guaranteed rare drop instead.
+Elites don't get extra loot rolls. They get a guaranteed rare drop instead, plus a 2% chance of a Sunward suit piece for the [Surface](../world/surface.md).
 
 ## Rare drops
 - **Normal leveled mobs:** 3% × power chance (about 0.3% at level 10, 1.2% at level 25, 3% at level 50).
@@ -50,3 +50,4 @@ Enchanted books can be any enchantment in the game, including curses.
 - [Elite mobs](elites.md)
 - [Mob gear](gear.md): mob armor and weapons never drop
 - [Ores](../world/ores.md)
+- [The Surface](../world/surface.md)

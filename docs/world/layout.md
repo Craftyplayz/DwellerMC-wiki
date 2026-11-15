@@ -1,6 +1,6 @@
 # World layout
 
-The world is one huge cave system. There is no surface, no sky to walk under and no overworld terrain.
+The world is one huge cave system. There is no surface, no sky to walk under and no overworld terrain. The only way up is the portal to the separate [Surface](surface.md) world.
 
 ## Height limits
 | Y | What's there |
@@ -51,4 +51,5 @@ Lava lakes and water and lava springs appear in every biome except the [Deep Dar
 - [Cave biomes](biomes/index.md)
 - [Structures](structures.md)
 - [Spawning & respawning](spawning.md)
+- [The Surface](surface.md)
 - [Elevators](../plugins/v-elevator.md): getting up and down a 2,000-block-deep world

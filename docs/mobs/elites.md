@@ -49,6 +49,7 @@ Timed abilities run on their own timer, which starts at a random point for each 
 ## Rewards
 - **XP:** the normal [leveled XP bonus](rewards.md#bonus-xp), then **×5**.
 - **One guaranteed [rare drop](rewards.md#rare-drops).**
+- **2% chance to drop one random piece of the Sunward suit**, needed to enter the [Surface](../world/surface.md).
 - Elites don't get the extra loot rolls normal leveled mobs get.
 
 Rewards only apply when a player kills the elite.
@@ -58,3 +59,4 @@ Rewards only apply when a player kills the elite.
 - [Mob abilities](abilities.md): abilities every leveled mob has
 - [Kill rewards](rewards.md)
 - [Depth & area level](../world/depth.md)
+- [The Surface](../world/surface.md): level 50 mobs and suit pieces
