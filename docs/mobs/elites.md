@@ -46,9 +46,16 @@ Timed abilities run on their own timer, which starts at a random point for each 
 !!! warning "Summoners"
     Summoned minions are leveled for the depth where they appear and can roll their own elite chance.
 
+## Enchantments against elites
+- [Elite Bane](../enchants/list.md#elite-bane) deals extra damage to elites, and [Elite Ward](../enchants/list.md#elite-ward) armor takes less damage from them.
+- A weapon with Elite Bane or [Executioner](../enchants/list.md#executioner) hits through **Shielded** without using up one of its 3 blocks.
+- **Thorns** reflects 20% of your hit before the custom damage bonuses are added.
+- [Silence](../enchants/list.md#silence) switches off every trait for 5 s, Explosive death included.
+
 ## Rewards
 - **XP:** the normal [leveled XP bonus](rewards.md#bonus-xp), then **×5**.
 - **One guaranteed [rare drop](rewards.md#rare-drops).**
+- **Five times the chance of an [enchantment book](../enchants/index.md#where-books-come-from).**
 - **2% chance to drop one random piece of the Sunward suit**, needed to enter the [Surface](../world/surface.md).
 - Elites don't get the extra loot rolls normal leveled mobs get.
 
@@ -58,5 +65,6 @@ Rewards only apply when a player kills the elite.
 - [Mob levels](levels.md)
 - [Mob abilities](abilities.md): abilities every leveled mob has
 - [Kill rewards](rewards.md)
+- [Enchantments](../enchants/list.md): Elite Bane, Elite Ward, Silence
 - [Depth & area level](../world/depth.md)
 - [The Surface](../world/surface.md): level 50 mobs and suit pieces

@@ -94,3 +94,4 @@ The health number updates twice a second for mobs within 24 blocks of a player.
 - [Mob gear](gear.md), [Mob abilities](abilities.md)
 - [Elite mobs](elites.md), [Tougher spawns](spawn-mix.md)
 - [Kill rewards](rewards.md)
+- [Enchantments](../enchants/list.md): Depth Slayer scales with power

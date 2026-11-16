@@ -41,6 +41,9 @@ Bigger blasts and shorter fuses. See [Mob levels](levels.md#mob-specific).
 ## Zombies
 More likely to call reinforcements. See [Mob levels](levels.md#mob-specific).
 
+## Silence
+A weapon with the [Silence](../enchants/list.md#silence) enchantment can switch off every ability on this page for 5 s, plus a mob's elite traits.
+
 !!! note
     Spider leaps and enderman teleports are only checked for mobs within 24 blocks of a player.
 

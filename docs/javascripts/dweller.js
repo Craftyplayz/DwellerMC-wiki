@@ -46,6 +46,21 @@
       rareDropMaxChance: 0.03,
     },
     elites: { chance: [0.01, 0.03], xpMultiplier: 5 },
+    // DwellerEnchants config (drops, books, anvil, enchants)
+    enchants: {
+      dropChance: [0.01, 0.06],   // drops.chance: at mob level 1 and level 50, linear by level
+      eliteMultiplier: 5,         // drops.elite-multiplier
+      lootingPerLevel: 0.01,      // drops.looting-per-level
+      weightsTop: { common: 70, uncommon: 22, rare: 7, legendary: 1, mythic: 0 },        // drops.weights-top
+      weightsBottom: { common: 22, uncommon: 28, rare: 25, legendary: 15, mythic: 10 },  // drops.weights-bottom
+      rarityChance: {             // books.rarities.<rarity>.chance: application chance range
+        common: [0.5, 0.6], uncommon: [0.6, 0.7], rare: [0.7, 0.8], legendary: [0.8, 0.95], mythic: [0.95, 1.0],
+      },
+      anvilCost: { common: 1, uncommon: 2, rare: 4, legendary: 8, mythic: 8 },  // books.rarities.<rarity>.anvil-cost
+      anvilMaxCost: 45,           // anvil.max-cost
+      depthSlayer: [0.5, 1.0, 1.5, 2.0, 2.5],  // enchants.depth_slayer.bonus-at-max, per enchantment level
+      sunderIgnored: [0.15, 0.3, 0.45, 0.6, 0.75],  // enchants.sunder.ignored, per enchantment level
+    },
     // DwellerTools config grappling-hook
     grapple: {
       range: 24,            // grapple.range
@@ -121,6 +136,21 @@
     eliteTraitCount: (level) => (level <= 15 ? 1 : level <= 35 ? 2 : 3),
     gearTier: (level) => (level >= 45 ? 4 : level >= 35 ? 3 : level >= 18 ? 2 : level >= 11 ? 1 : 0),
     nameColor: (level) => (level <= 10 ? "Green" : level <= 20 ? "Yellow" : level <= 35 ? "Red" : level <= 45 ? "Light purple" : "Dark red"),
+    // DwellerEnchants Odds.java: the mob's level stands in for depth (0 at level 1, 1 at the max level)
+    levelFraction: (level) => clamp((level - 1) / (DW.maxLevel - 1), 0, 1),
+    bookChance: (y, elite = false, looting = 0) => {
+      const e = DW.enchants, f = F.levelFraction(F.areaLevel(y));
+      return clamp((e.dropChance[0] + (e.dropChance[1] - e.dropChance[0]) * f) * (elite ? e.eliteMultiplier : 1) + looting * e.lootingPerLevel, 0, 1);
+    },
+    // { common: 0.7, ... }: chance of each rarity for a dropped book at a Y
+    rarityOdds: (y) => {
+      const e = DW.enchants, f = F.levelFraction(F.areaLevel(y));
+      const w = Object.keys(e.weightsTop).map((r) => [r, e.weightsTop[r] + (e.weightsBottom[r] - e.weightsTop[r]) * f]);
+      const total = w.reduce((t, [, v]) => t + v, 0);
+      return Object.fromEntries(w.map(([r, v]) => [r, v / total]));
+    },
+    // Depth Slayer bonus (1.5 = +150%) at enchantment level ench against a mob in the middle of its level
+    depthSlayer: (ench, level) => DW.enchants.depthSlayer[ench - 1] * F.power((level - 1) * 100 + 50),
   };
 
   const pct = (v, d = 1) => (v * 100).toFixed(d).replace(/\.0+$/, "") + "%";

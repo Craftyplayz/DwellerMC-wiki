@@ -5,7 +5,7 @@ const path = require("path");
 const { DW } = require("../docs/javascripts/dweller.js");
 
 const root = path.resolve(__dirname, "../..");
-for (const repo of ["DwellerCore", "DwellerBiomes", "DwellerStructures", "DwellerTools"]) {
+for (const repo of ["DwellerCore", "DwellerBiomes", "DwellerStructures", "DwellerTools", "DwellerEnchants"]) {
   if (!fs.existsSync(path.join(root, repo))) {
     console.error(`Plugin repo not found: expected ${path.join(root, repo)}`);
     process.exit(2);
@@ -119,6 +119,7 @@ const skip = (dwPath, reason) => { covered.add(dwPath); notChecked.push(`DW.${dw
 const CORE = "DwellerCore/src/main/resources/config.yml";
 const BIOMES = "DwellerBiomes/src/main/resources/config.yml";
 const TOOLS = "DwellerTools/src/main/resources/config.yml";
+const ENCH = "DwellerEnchants/src/main/resources/config.yml";
 const DEPTH = "DwellerCore/src/main/java/net/dwellermc/core/Depth.java";
 const GEN = "DwellerCore/src/main/java/net/dwellermc/core/world/DwellerGenerator.java";
 const DUNGEONS = "DwellerCore/tools/dungeons.py";
@@ -171,6 +172,15 @@ for (const [k, key] of Object.entries({
   hammerRadius: "hammer.radius", hammerDurability: "hammer.item.durability",
   paxelSpeed: "paxel.mining-speed", paxelDurability: "paxel.item.durability",
 })) cfg(`miningTools.${k}`, TOOLS, key);
+
+for (const [k, key] of Object.entries({
+  dropChance: "drops.chance", eliteMultiplier: "drops.elite-multiplier", lootingPerLevel: "drops.looting-per-level",
+  weightsTop: "drops.weights-top", weightsBottom: "drops.weights-bottom", anvilMaxCost: "anvil.max-cost",
+  depthSlayer: "enchants.depth_slayer.bonus-at-max", sunderIgnored: "enchants.sunder.ignored",
+})) cfg(`enchants.${k}`, ENCH, key);
+const rarities = ychildren(ENCH, ["books", "rarities"]);
+for (const [k, key] of [["rarityChance", "chance"], ["anvilCost", "anvil-cost"]])
+  check(`enchants.${k}`, Object.fromEntries(rarities.map((r) => [r, yget(ENCH, ["books", "rarities", r, key])])), `${ENCH}:books.rarities.*.${key}`);
 
 const points = constant(DUNGEONS, "POINTS");
 check("dungeons", points && JSON.parse(points.replace(/\(/g, "[").replace(/\)/g, "]")), `${DUNGEONS}:POINTS`);

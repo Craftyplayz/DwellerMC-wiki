@@ -72,6 +72,9 @@ nav:
       - Tougher spawns: mobs/spawn-mix.md
       - Elite mobs: mobs/elites.md
       - Kill rewards: mobs/rewards.md
+  - Enchanting:
+      - enchants/index.md
+      - Enchantments: enchants/list.md
   - Server features:
       - Getting around:
           - Commands and spawn: plugins/essentials.md

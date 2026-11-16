@@ -59,12 +59,12 @@ While you are on a rope and not standing on the ground, you mine at normal speed
 ## Durability and cooldown
 - **64** uses, 1 per successful throw or rappel.
 - One **8 second** cooldown, shared by both. You can see it on the item.
-- Unbreaking can save a use, like on other tools.
+- Unbreaking can save a use, like on other tools. With [Unbreakable](../enchants/list.md#unbreakable) it never wears out.
 
 ## Repairing and enchanting
 - Repair in an anvil with **iron ingots** (each one restores 25%), or combine two Grappling Hooks in an anvil.
 - You can't repair or combine it in the crafting grid.
-- **Unbreaking** is the only enchantment that can go on it. There is no Mending on this server.
+- **Unbreaking** and **[Unbreakable](../enchants/list.md#unbreakable)** are the only enchantments that can go on it. There is no Mending on this server.
 
 ## Resource pack
 The hook and the rope use textures from the server resource pack. It is sent when you join and you have to accept it.

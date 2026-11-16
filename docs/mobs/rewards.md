@@ -28,7 +28,7 @@ Each normal drop (rotten flesh, bones, string and so on) gets extra copies:
 | 40 | 1.47 | 4, or 6 (47% chance) |
 | 50 | 1.97 | 4, or 6 (97% chance) |
 
-Elites don't get extra loot rolls. They get a guaranteed rare drop instead, plus a 2% chance of a Sunward suit piece for the [Surface](../world/surface.md).
+Elites don't get extra loot rolls. They get a guaranteed rare drop instead, five times the [enchantment book](#enchantment-books) chance, plus a 2% chance of a Sunward suit piece for the [Surface](../world/surface.md).
 
 ## Rare drops
 - **Normal leveled mobs:** 3% × power chance (about 0.3% at level 10, 1.2% at level 25, 3% at level 50).
@@ -38,16 +38,20 @@ Elites don't get extra loot rolls. They get a guaranteed rare drop instead, plus
 |---|---|
 | 1–2 Diamonds | 30% |
 | 2–4 Emeralds | 30% |
-| Enchanted book: any enchantment, at a random level from I up to its max | 25% |
+| Enchanted book: a random vanilla enchantment, at a random level from I up to its max | 25% |
 | Golden Apple | 12% |
 | Enchanted Golden Apple | 2% |
 | Totem of Undying | 1% |
 
-Enchanted books can be any enchantment in the game, including curses.
+The book can roll any enchantment that chest loot can have, curses and Frost Walker included. Mending, Swift Sneak, Soul Speed, Wind Burst and the server's [custom enchantments](../enchants/list.md) never appear.
+
+## Enchantment books
+Hostile leveled mobs killed by a player can also drop an unattuned enchantment book for the server's custom enchantments: 1% at level 1 up to 6% at level 50, ×5 for elites. Deeper mobs drop rarer books. See [Enchanting](../enchants/index.md) for the odds and how to use them.
 
 ## Related
 - [Mob levels](levels.md)
 - [Elite mobs](elites.md)
+- [Enchanting](../enchants/index.md): custom enchantment books
 - [Mob gear](gear.md): mob armor and weapons never drop
 - [Ores](../world/ores.md)
 - [The Surface](../world/surface.md)

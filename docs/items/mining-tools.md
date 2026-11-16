@@ -17,7 +17,7 @@ The ingots go in the middle and bottom slots of the middle column.
 A netherite pickaxe with **Efficiency X**. That is far past the Efficiency V you can get from an enchanting table, and it breaks stone and deepslate almost instantly.
 
 - It takes every pickaxe enchantment in an anvil, with the usual anvil rules.
-- Efficiency stays at X. Adding an Efficiency book or using a grindstone does not lower it.
+- Efficiency stays at X when you add an Efficiency book, and the [grindstone menu](../enchants/index.md#grindstone) does not list it: enchantments above their normal max level can't be removed.
 
 ## Hammer
 A netherite pickaxe that mines a **3x3** square. When you break a block, the 8 blocks around it break too, in a flat square against the face you hit. Mine a wall and you clear a 3x3 patch of the wall. Mine a floor and you clear a 3x3 patch of the floor. It always works this way, there is no sneak switch.
@@ -39,7 +39,7 @@ A pickaxe, axe and shovel in one. It is a netherite axe underneath, so it hits l
 - Repair in an anvil with **netherite ingots** (each one restores 25%), or combine two tools of the same kind.
 - A tool never merges into a different item in an anvil.
 - You can't use them as crafting ingredients, which also blocks repair in the crafting grid.
-- Enchant them like their vanilla base: pickaxe enchantments for the Drill and Hammer, axe enchantments for the Paxel.
+- Enchant them like their vanilla base: pickaxe enchantments for the Drill and Hammer, axe enchantments for the Paxel. That includes the [custom enchantments](../enchants/list.md): Unbreakable on all three, and the melee ones on the Paxel.
 
 ## Resource pack
 Each tool has its own texture from the server resource pack. See the [Grappling Hook](grappling-hook.md#resource-pack) page if you were kicked for the pack.

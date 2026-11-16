@@ -14,8 +14,8 @@ Each piece lasts **30:00** of wear.
 - A piece loses 1 second per second while you wear it, anywhere, even underground. Take it off when you aren't using it.
 - The durability bar shows the time left. At 0 the piece breaks.
 - Taking hits does not wear it down.
-- It can't be repaired in any way: no anvil, grindstone, crafting grid or Mending.
-- Mending and Unbreaking can't be put on it. Other enchantments are fine.
+- It can't be repaired in any way: no anvil, grindstone or crafting grid.
+- Mending, Unbreaking and [Unbreakable](../enchants/list.md#unbreakable) can't be put on it. Other enchantments are fine.
 - You get a warning message when a piece has 5 minutes, 1 minute and 10 seconds left.
 
 ### Getting a suit

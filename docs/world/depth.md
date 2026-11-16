@@ -22,6 +22,7 @@ Enter any Y level:
 | Spawn swapped for a tougher mob | 0% | 50% | [Tougher spawns](../mobs/spawn-mix.md) |
 | Rare deep mobs | never | below Y -1400 | [Tougher spawns](../mobs/spawn-mix.md#deep-mobs) |
 | Elite chance | 1% | 3% | [Elite mobs](../mobs/elites.md) |
+| Enchantment book drops (by mob level) | 1%, mostly Common | 6%, rarer books | [Enchanting](../enchants/index.md#where-books-come-from) |
 | Dungeons | none above Y -250 | ×2 below Y -1500 | [Structures](structures.md#dungeons) |
 | Cave biomes | each has its own depth range | | [Cave biomes](biomes/index.md) |
 
@@ -52,6 +53,7 @@ Mobs spawn at the area level ±2, never below 1 or above 50. See [Mob levels](..
 - [World layout](layout.md)
 - [Spawning & respawning](spawning.md): where you start and respawn
 - [Mob levels](../mobs/levels.md), [Elite mobs](../mobs/elites.md), [Tougher spawns](../mobs/spawn-mix.md)
+- [Enchanting](../enchants/index.md): book drops scale with mob level
 - [Ores](ores.md)
 - [Grappling Hook](../items/grappling-hook.md): a quicker way up and down
 - [Drill, Hammer and Paxel](../items/mining-tools.md): faster digging through the depths

@@ -24,3 +24,26 @@ for (const y of [-17, -100, -200, -300, -400, -500, -600, -800, -1000, -1200, -1
   const [lo, hi] = F.levelRange(y);
   console.log(`| ${y} | ${F.depth(y).toLocaleString("en-US")} | ${F.areaLevel(y)} | ${lo}–${hi} | ${pct(F.replaceChance(y))} | ${pct(F.eliteChance(y), 2)} |`);
 }
+
+const E = DW.enchants, R = ["Common", "Uncommon", "Rare", "Legendary", "Mythic"];
+console.log("\n## enchants/index.md: book drops by depth\n| Depth | Area level | Book chance | Elite | " + R.join(" | ") + " |\n|---|---|---|---|" + R.map(() => "---|").join(""));
+for (const d of [0, 500, 1000, 1500, 2000, 2031]) {
+  const y = -d, o = F.rarityOdds(y);
+  console.log(`| ${d.toLocaleString("en-US")} | ${F.areaLevel(y)} | ${pct(F.bookChance(y), 2)} | ${pct(F.bookChance(y, true), 1)} | ` + Object.values(o).map((v) => pct(v, 1)).join(" | ") + " |");
+}
+
+console.log("\n## enchants/index.md: rarities\n| Rarity | Application chance | Anvil cost per level |\n|---|---|---|");
+for (const [k, [a, b]] of Object.entries(E.rarityChance))
+  console.log(`| ${k[0].toUpperCase() + k.slice(1)} | ${pct(a, 0)} to ${pct(b, 0)} | ${E.anvilCost[k]} |`);
+
+const roman = ["I", "II", "III", "IV", "V"];
+console.log("\n## enchants/list.md: Depth Slayer by mob level\n| Mob level | " + E.depthSlayer.map((_, i) => roman[i]).join(" | ") + " |\n|---|" + E.depthSlayer.map(() => "---|").join(""));
+for (const L of [1, 10, 20, 25, 30, 40, 50])
+  console.log(`| ${L} | ` + E.depthSlayer.map((_, i) => "+" + pct(F.depthSlayer(i + 1, L), 0)).join(" | ") + " |");
+
+// Sunder example: 18.5 damage, 80% armor reduction, Protection IV x4 (16 points, 64%), vanilla formula as in Odds.sunder.
+console.log("\n## enchants/list.md: Sunder example\n| Sunder | Damage per hit |\n|---|---|");
+for (const [name, ign] of [["None", 0], ...E.sunderIgnored.map((v, i) => [roman[i], v])]) {
+  const keep = 1 - ign;
+  console.log(`| ${name} | ${n(18.5 * (1 - 0.8 * keep) * (1 - Math.min(20, 16 * keep) / 25), 1)} |`);
+}

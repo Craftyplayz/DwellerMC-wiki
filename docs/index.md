@@ -24,7 +24,13 @@ DwellerMC is an underground survival world. The main world is a 2,000-block-deep
 | [Mob abilities](mobs/abilities.md) | Status-effect hits, sharpshooting archers, leaping spiders and more |
 | [Tougher spawns](mobs/spawn-mix.md) | Spawns swapped for tougher mobs, deep mobs, wardens |
 | [Elite mobs](mobs/elites.md) | Elite chance, the 12 traits, boss bars |
-| [Kill rewards](mobs/rewards.md) | Bonus XP, extra loot, rare drops |
+| [Kill rewards](mobs/rewards.md) | Bonus XP, extra loot, rare drops, enchantment books |
+
+## Enchanting
+| Page | What it covers |
+|---|---|
+| [Enchanting](enchants/index.md) | Book drops and rarities, attuning, anvil and grindstone rules, no Mending |
+| [Enchantments](enchants/list.md) | All 27 custom enchantments and their numbers |
 
 ## Server features
 | Page | What it covers |
