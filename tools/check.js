@@ -166,6 +166,12 @@ for (const [k, key] of Object.entries({
   durability: "item.durability", cooldown: "cooldown", maxRopes: "rope.max-per-player", despawnSeconds: "rope.despawn-seconds",
 })) cfg(`grapple.${k}`, TOOLS, `grappling-hook.${key}`);
 
+for (const [k, key] of Object.entries({
+  drillEfficiency: "drill.efficiency-level", drillDurability: "drill.item.durability",
+  hammerRadius: "hammer.radius", hammerDurability: "hammer.item.durability",
+  paxelSpeed: "paxel.mining-speed", paxelDurability: "paxel.item.durability",
+})) cfg(`miningTools.${k}`, TOOLS, key);
+
 const points = constant(DUNGEONS, "POINTS");
 check("dungeons", points && JSON.parse(points.replace(/\(/g, "[").replace(/\)/g, "]")), `${DUNGEONS}:POINTS`);
 

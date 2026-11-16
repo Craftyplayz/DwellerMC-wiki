@@ -56,6 +56,15 @@
       maxRopes: 2,          // rope.max-per-player
       despawnSeconds: 15,   // rope.despawn-seconds
     },
+    // DwellerTools config drill, hammer, paxel
+    miningTools: {
+      drillEfficiency: 10,  // drill.efficiency-level
+      drillDurability: 2031,   // drill.item.durability
+      hammerRadius: 1,      // hammer.radius
+      hammerDurability: 2031,  // hammer.item.durability
+      paxelSpeed: 9,        // paxel.mining-speed
+      paxelDurability: 2031,   // paxel.item.durability
+    },
     // DwellerCore tools/dungeons.py POINTS: (Y, x vanilla), linear between, none above the first
     dungeons: [[-250, 0.6], [-1000, 1.0], [-1500, 2.0], [-2026, 2.0]],
     // DwellerBiomes config (placement); edge fade from patches.edge-fade

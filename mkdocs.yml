@@ -77,6 +77,7 @@ nav:
           - Commands and spawn: plugins/essentials.md
           - Elevators: plugins/v-elevator.md
           - Grappling Hook: items/grappling-hook.md
+          - Drill, Hammer and Paxel: items/mining-tools.md
           - Protected areas: plugins/worldguard.md
       - Mining:
           - Veinmine: plugins/veinminer.md

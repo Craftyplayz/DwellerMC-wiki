@@ -73,5 +73,6 @@ If you got kicked for the pack, open the server list, select DwellerMC, press **
 
 ## Related
 - [World layout](../world/layout.md) and [Depth & area level](../world/depth.md): how deep the world goes.
+- [Drill, Hammer and Paxel](mining-tools.md): the craftable mining tools.
 - [Elevators](../plugins/v-elevator.md): the other way up and down a shaft.
 - [The Surface](../world/surface.md): the hook works there too.
