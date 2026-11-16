@@ -31,6 +31,7 @@ DwellerMC is an underground survival world. The main world is a 2,000-block-deep
 |---|---|
 | [Commands and spawn](plugins/essentials.md) | `/spawn`, homes, teleport requests, messages |
 | [Elevators](plugins/v-elevator.md) | Fast travel up and down shafts |
+| [Grappling Hook](items/grappling-hook.md) | Craftable rope tool: grapple up, rappel down, resource pack |
 | [Veinmine](plugins/veinminer.md), [Crafty Tools](plugins/craftytools.md), [PickupBot](plugins/pickupbot.md) | Mining helpers |
 | [Brewing](plugins/breweryx.md), [Vaults](plugins/vaults.md), [Vertical slabs](plugins/vertical-slabs.md) | Drinks, extra storage, building |
 | [Discord](plugins/discord.md), [Tab list](plugins/tab-list.md), [Stats](plugins/stats.md) | Community |

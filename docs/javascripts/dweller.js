@@ -46,6 +46,16 @@
       rareDropMaxChance: 0.03,
     },
     elites: { chance: [0.01, 0.03], xpMultiplier: 5 },
+    // DwellerTools config grappling-hook
+    grapple: {
+      range: 24,            // grapple.range
+      ropeLength: 24,       // grapple.rope-length
+      rappelLength: 48,     // rappel.rope-length
+      durability: 64,       // item.durability
+      cooldown: 8,          // cooldown (seconds)
+      maxRopes: 2,          // rope.max-per-player
+      despawnSeconds: 15,   // rope.despawn-seconds
+    },
     // DwellerCore tools/dungeons.py POINTS: (Y, x vanilla), linear between, none above the first
     dungeons: [[-250, 0.6], [-1000, 1.0], [-1500, 2.0], [-2026, 2.0]],
     // DwellerBiomes config (placement); edge fade from patches.edge-fade

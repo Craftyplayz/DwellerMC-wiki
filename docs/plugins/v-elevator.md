@@ -21,5 +21,6 @@ You arrive standing on top of the other elevator. A sound and particles play and
 - Anyone can mine your elevator unless your base is protected.
 
 ## Related
+- [Grappling Hook](../items/grappling-hook.md): a craftable rope for climbing and rappelling.
 - [Vaults](vaults.md): personal storage.
 - [Vertical slabs](vertical-slabs.md): building blocks for shafts and bases.

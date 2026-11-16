@@ -53,3 +53,4 @@ Mobs spawn at the area level ±2, never below 1 or above 50. See [Mob levels](..
 - [Spawning & respawning](spawning.md): where you start and respawn
 - [Mob levels](../mobs/levels.md), [Elite mobs](../mobs/elites.md), [Tougher spawns](../mobs/spawn-mix.md)
 - [Ores](ores.md)
+- [Grappling Hook](../items/grappling-hook.md): a quicker way up and down

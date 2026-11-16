@@ -76,6 +76,7 @@ nav:
       - Getting around:
           - Commands and spawn: plugins/essentials.md
           - Elevators: plugins/v-elevator.md
+          - Grappling Hook: items/grappling-hook.md
           - Protected areas: plugins/worldguard.md
       - Mining:
           - Veinmine: plugins/veinminer.md

@@ -66,3 +66,4 @@ Once per real day, at **18:00** server time, a Sun Shard appears at the Surface 
 - [Kill rewards](../mobs/rewards.md)
 - [Mob levels](../mobs/levels.md)
 - [Commands and spawn](../plugins/essentials.md)
+- [Grappling Hook](../items/grappling-hook.md): works on the Surface too

@@ -57,3 +57,4 @@ Lava lakes and water and lava springs appear in every biome except the [Deep Dar
 - [Spawning & respawning](spawning.md)
 - [The Surface](surface.md)
 - [Elevators](../plugins/v-elevator.md): getting up and down a 2,000-block-deep world
+- [Grappling Hook](../items/grappling-hook.md): craftable rope tool for shafts and cliffs

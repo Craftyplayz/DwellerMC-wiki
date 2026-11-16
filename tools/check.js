@@ -5,7 +5,7 @@ const path = require("path");
 const { DW } = require("../docs/javascripts/dweller.js");
 
 const root = path.resolve(__dirname, "../..");
-for (const repo of ["DwellerCore", "DwellerBiomes", "DwellerStructures"]) {
+for (const repo of ["DwellerCore", "DwellerBiomes", "DwellerStructures", "DwellerTools"]) {
   if (!fs.existsSync(path.join(root, repo))) {
     console.error(`Plugin repo not found: expected ${path.join(root, repo)}`);
     process.exit(2);
@@ -118,6 +118,7 @@ const skip = (dwPath, reason) => { covered.add(dwPath); notChecked.push(`DW.${dw
 
 const CORE = "DwellerCore/src/main/resources/config.yml";
 const BIOMES = "DwellerBiomes/src/main/resources/config.yml";
+const TOOLS = "DwellerTools/src/main/resources/config.yml";
 const DEPTH = "DwellerCore/src/main/java/net/dwellermc/core/Depth.java";
 const GEN = "DwellerCore/src/main/java/net/dwellermc/core/world/DwellerGenerator.java";
 const DUNGEONS = "DwellerCore/tools/dungeons.py";
@@ -159,6 +160,11 @@ check("mobs.deep", weighted("mobs.spawn-mix.deep-mobs"), `${CORE}:mobs.spawn-mix
 
 cfg("elites.chance", CORE, "elites.chance");
 cfg("elites.xpMultiplier", CORE, "elites.xp-multiplier");
+
+for (const [k, key] of Object.entries({
+  range: "grapple.range", ropeLength: "grapple.rope-length", rappelLength: "rappel.rope-length",
+  durability: "item.durability", cooldown: "cooldown", maxRopes: "rope.max-per-player", despawnSeconds: "rope.despawn-seconds",
+})) cfg(`grapple.${k}`, TOOLS, `grappling-hook.${key}`);
 
 const points = constant(DUNGEONS, "POINTS");
 check("dungeons", points && JSON.parse(points.replace(/\(/g, "[").replace(/\)/g, "]")), `${DUNGEONS}:POINTS`);
