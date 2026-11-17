@@ -97,4 +97,5 @@ nav:
           - Discord: plugins/discord.md
           - Tab list: plugins/tab-list.md
           - Stats: plugins/stats.md
+          - Restarts and announcements: plugins/server-notices.md
           - Chat reporting: plugins/chat-reporting.md

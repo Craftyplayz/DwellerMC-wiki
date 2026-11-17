@@ -42,6 +42,7 @@ DwellerMC is an underground survival world. The main world is a 2,000-block-deep
 | [Veinmine](plugins/veinminer.md), [Crafty Tools](plugins/craftytools.md), [PickupBot](plugins/pickupbot.md) | Mining helpers |
 | [Brewing](plugins/breweryx.md), [Vaults](plugins/vaults.md), [Vertical slabs](plugins/vertical-slabs.md) | Drinks, extra storage, building |
 | [Discord](plugins/discord.md), [Tab list](plugins/tab-list.md), [Stats](plugins/stats.md) | Community |
+| [Restarts and announcements](plugins/server-notices.md) | Restart warnings, [Server] messages, maintenance, being frozen |
 
 ## Quick facts
 - World height: Y **-2032** (bedrock floor under a lava sea) up to the bedrock roof at about Y **0**.
