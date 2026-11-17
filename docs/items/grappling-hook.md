@@ -67,7 +67,7 @@ While you are on a rope and not standing on the ground, you mine at normal speed
 - **Unbreaking** and **[Unbreakable](../enchants/list.md#unbreakable)** are the only enchantments that can go on it. There is no Mending on this server.
 
 ## Resource pack
-The hook and the rope use textures from the server resource pack. It is sent when you join and you have to accept it.
+The hook and the rope use item models from the server resource pack. The hook looks like a tripwire hook and the rope like a chain. The pack is sent when you join and you have to accept it.
 
 If you got kicked for the pack, open the server list, select DwellerMC, press **Edit** and set **Server Resource Packs** to **Enabled**. Then join again.
 

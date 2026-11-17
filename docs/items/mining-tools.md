@@ -42,7 +42,7 @@ A pickaxe, axe and shovel in one. It is a netherite axe underneath, so it hits l
 - Enchant them like their vanilla base: pickaxe enchantments for the Drill and Hammer, axe enchantments for the Paxel. That includes the [custom enchantments](../enchants/list.md): Unbreakable on all three, and the melee ones on the Paxel.
 
 ## Resource pack
-Each tool has its own texture from the server resource pack. See the [Grappling Hook](grappling-hook.md#resource-pack) page if you were kicked for the pack.
+The tools come from the server resource pack. The Drill and Hammer look like a netherite pickaxe and the Paxel like a netherite axe. See the [Grappling Hook](grappling-hook.md#resource-pack) page if you were kicked for the pack.
 
 ## Related
 - [Grappling Hook](grappling-hook.md): the rope tool.
