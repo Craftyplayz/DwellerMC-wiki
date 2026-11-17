@@ -17,7 +17,7 @@ Desert-colored caves with sandstone and terracotta bands, sandy floors and husks
 | Dead bush | Floor | 3% |
 | Pointed dripstone | Ceiling | 1.5% |
 
-Also generates Minecraft's usual underground features: lava lakes, amethyst geodes, dungeons, stone patches, disks, springs and glow lichen.
+Also generates Minecraft's usual underground features: water and lava lakes, amethyst geodes, dungeons, stone patches, disks, springs and glow lichen.
 
 ## Mobs
 | Mob | Weight | Group size |

@@ -20,7 +20,7 @@ Each sculk floor block tries these in order and stops at the first success:
 | Sculk sensor | Floor | 0.4% |
 | Sculk shrieker (can summon a Warden) | Floor | 0.15% |
 
-Minecraft's own deep dark features also generate: sculk patches and sculk veins, plus geodes and dungeons. There are no lava lakes or springs. **Minecraft's ore generation is removed:** ores come only from the normal [ore system](../ores.md).
+Minecraft's own deep dark features also generate: sculk patches and sculk veins, plus geodes and dungeons. There are no water or lava lakes or springs. **Minecraft's ore generation is removed:** ores come only from the normal [ore system](../ores.md).
 
 !!! danger "Wardens"
     The placed shriekers are the natural kind that can summon a Warden. Wardens are never leveled and never elite, but they are still Wardens.

@@ -6,7 +6,7 @@ The default biome. Plain stone (down to Y -300) and deepslate (below Y -308), wi
 
 ## Blocks & features
 - No restyling: rock is plain [stone or deepslate](../layout.md#height-limits).
-- Lava lakes, amethyst geodes and [dungeons](../structures.md#dungeons) (below Y -250).
+- Water and lava lakes, amethyst geodes and [dungeons](../structures.md#dungeons) (below Y -250).
 - Patches of dirt, gravel, granite, diorite, andesite and tuff.
 - Sand, clay and gravel disks, water and lava springs, glow lichen.
 

@@ -47,7 +47,7 @@ Minecraft's usual underground features also generate, using Minecraft's own plac
 - Patches of dirt, gravel, granite, andesite and tuff
 - Sand, clay and gravel disks, and glow lichen
 
-Lava lakes and water and lava springs appear in every biome except the [Deep Dark](biomes/deep-dark.md). Some biomes add their own features on top, such as large dripstones or sulfur pools: see each [biome page](biomes/index.md). Minecraft's own ore generation is turned off everywhere; see [Ores](ores.md).
+Water and lava springs and underground lakes (half water, half lava) appear at every depth in every biome except the [Deep Dark](biomes/deep-dark.md). Lava gets more common the deeper you go, about three times as much near the lava sea as just under the roof. Mineshafts also appear at every depth: see [Structures](structures.md). Chunks you already explored keep how they were; only new chunks get this. Some biomes add their own features on top, such as large dripstones or sulfur pools: see each [biome page](biomes/index.md). Minecraft's own ore generation is turned off everywhere; see [Ores](ores.md).
 
 ## Related
 - [Depth & area level](depth.md): why going deeper gets harder
